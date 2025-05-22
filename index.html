@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ワールドダーツアドベンチャー</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+    position: relative;
+    background-image: url('./img/world.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  </style>
+</head>
+<body class="relative flex items-center justify-center min-h-screen" style="z-index: 1; position: relative;">
+  <div class="max-w-md w-full bg-white rounded-2xl shadow-lg p-5 relative">
+    <h1 class="text-2xl font-bold text-center mb-5">World Dart Adventure</h1>
+    <div id="home-screen" class="flex flex-col items-center space-y-4">
+      <button class="start-btn bg-yellow-500 text-white font-bold py-2 px-4 rounded-lg w-full" data-theme="resort">🏝️ リゾートで冒険</button>
+      <button class="start-btn bg-blue-500 text-white font-bold py-2 px-4 rounded-lg w-full" data-theme="city">🌆 都市で冒険</button>
+      <button class="start-btn bg-green-500 text-white font-bold py-2 px-4 rounded-lg w-full" data-theme="nature">🌲 自然で冒険</button>
+    </div>
+    <video id="dart-animation" autoplay muted loop>
+      <source src="./img/Darts.mp4" type="video/mp4" />
+    </video>
+    <audio id="dart-sound">
+      <source src="./sounds/dart-throw.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="bgm" loop>
+      <source src="./sounds/bgm.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="click-sound">
+      <source src="./sounds/click.mp3" type="audio/mpeg" />
+    </audio>
+    <div id="dart-screen" class="hidden flex-col items-center space-y-4">
+      <p class="text-lg font-semibold">ダーツがあなたが行くべき国を選んでくれます</p>
+      <div id="map" style="position: relative;"></div>
+    </div>
+    <div id="result-screen" class="hidden flex-col items-center space-y-4">
+      <h2 class="text-xl font-bold">あなたにおすすめの場所:</h2>
+      <p id="country-name" class="text-lg"></p>
+      <h2 class="text-xl font-bold">国の詳細情報</h2>
+      <div id="country-details" class="bg-gray-100 p-4 rounded-lg w-full text-left space-y-2">
+        <p><strong>首都:</strong> <span id="capital"></span></p>
+        <p><strong>人口:</strong> <span id="population"></span></p>
+        <p><strong>面積:</strong> <span id="area"></span></p>
+        <p><strong>公用語:</strong> <span id="language"></span></p>
+      </div>
+      <h2 class="text-xl font-bold">おすすめ観光地</h2>
+      <ul id="tourist-spots" class="list-disc pl-5 space-y-1"></ul>
+      <button id="retry-btn" class="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg">🔄 もう一度挑戦</button>
+    </div>
+  </div>
+<script src="js/displayCountryDetails.js"></script>
+</body>
+  <!-- 省略：以下は既存のHTMLとJavaScriptコード -->
