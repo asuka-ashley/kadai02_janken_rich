@@ -17,13 +17,13 @@ https://asuka-ashley.github.io/kadai02_janken_rich/
 ## ⑤工夫した点・こだわった点
 - 動的な地図表示：選択された国に合わせて、地図の表示とピン留めをしてくれます
 - 国旗の表示：地図のピンに国旗が表示されます
-  ![image](https://github.com/user-attachments/assets/da9daee1-98fb-4e45-bae1-829f9842ad52)
-
+  ![image](https://github.com/user-attachments/assets/603b7426-41b1-4395-9a93-13594e789614)
 
 ## ⑥難しかった点・次回トライしたいこと（又は機能）
 - アニメーションの利用：アニメーションの調整が難しかったです。アニメーションは自分で作りました。
 - 音楽の表示：音楽が出力されるようにしました。この組み合わせと順番が難しかったです。
-![image](https://github.com/user-attachments/assets/47221613-d45d-4b99-b829-112baa7769ce)
+![image](https://github.com/user-attachments/assets/77b32908-d85c-4dba-ae91-62a5e057e45c)
+
 
 ## ⑦フリー項目（感想、シェアしたいこと等なんでも）
 - [感想]
