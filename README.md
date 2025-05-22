@@ -1,12 +1,12 @@
 # ①課題名
-じゃんけんアプリ リッチver.
+World Dart Adventure リッチver.
 
 ## ②課題内容（どんな作品か）
-- World Dart Adventure リッチver.
 - 旅行に行く時にどこに行こうか、悩んだことはありませんか？
 - 行きたい種類に合わせて、おすすめの国を提案してくれます
 - ![image](https://github.com/user-attachments/assets/9a8ad977-f4a6-4a28-8ffc-03e87dc6ce1d)
-　リゾート/都市/自然から選択できます。
+
+※リゾート/都市/自然の行きたい種類から選択できます。
 
 ## ③アプリのデプロイURL
 https://asuka-ashley.github.io/kadai02_janken_rich/
@@ -15,9 +15,9 @@ https://asuka-ashley.github.io/kadai02_janken_rich/
 - なし
 
 ## ⑤工夫した点・こだわった点
-- 動的な地図表示：選択された国に合わせて、地図の表示とピン留めをしてくれます
-- 国旗の表示：地図のピンに国旗が表示されます
-  ![image](https://github.com/user-attachments/assets/603b7426-41b1-4395-9a93-13594e789614)
+- 動的な地図表示：選択された国に合わせて、地図の表示とピン留めをしてくれます。
+- 国旗の表示：地図のピンに国旗が表示されます。
+ ![image](https://github.com/user-attachments/assets/603b7426-41b1-4395-9a93-13594e789614)
 
 ## ⑥難しかった点・次回トライしたいこと（又は機能）
 - アニメーションの利用：アニメーションの調整が難しかったです。アニメーションは自分で作りました。
